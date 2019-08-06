@@ -1,0 +1,33 @@
+bingo1 = False
+bingo2 = False
+bingo3 = False
+bingo = False
+while bingo == False:
+    if bingo1 == False:
+        print ('Год основания Москвы?')
+        answer1 = input ()
+        if answer1 == ('1147'):
+            print ('Верно!')
+            bingo1 = True
+        else:
+            continue
+    if bingo2 == False:
+        print ('Какой сейчас год?')
+        answer2 = input ()  
+        if answer2 == ('2019'):
+            print ('Верно!')
+            bingo2 = True
+        else:
+            continue    
+    if bingo3 == False:
+        print ('Что говорит кошка?')
+        answer3 = input ()
+        if answer3 == ('Мяу'):
+            print ('Верно!')
+            bingo3 = True
+        else:
+            continue    
+        
+if bingo1 == True or bingo2 == True or bingo3 == True:
+    bingo = True
+ 
