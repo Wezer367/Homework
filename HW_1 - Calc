@@ -1,0 +1,35 @@
+operation = True
+number_1 = True
+number_2 = True
+result = 0
+
+number_1 = input("Введите число: ")
+
+while True:
+    operation = input("Введите действие: ")
+    if operation == "":
+        break
+    number_2 = input("Введите число: ")
+    if number_2 == "":
+        break
+    elif operation == '+':
+        result = (float(number_1) + float(number_2))
+        print(result)        
+    elif operation == '-':
+        result = (float(number_1) - float(number_2))
+        print(result)
+    elif operation == '*':
+        result = (float(number_1) * float(number_2))
+        print(result)
+    elif operation == '/':
+        if (number_2 != 0):
+            result = (float(number_1) / float(number_2))
+            print(result)
+        else:
+            print("Деление на ноль! Введиите другую команду")
+            continue
+    else:
+        print('Введите команду')
+                        
+    number_1 = result        
+                       
